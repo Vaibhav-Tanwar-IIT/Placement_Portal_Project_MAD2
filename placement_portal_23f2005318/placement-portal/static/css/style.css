@@ -1,0 +1,168 @@
+:root {
+  --brand: #0d6efd;
+  --ink: #1f2d3d;
+  --muted: #6c7a8d;
+  --line: #e3e9f2;
+  --surface: #f5f7fb;
+}
+
+body {
+  background: var(--surface);
+  color: var(--ink);
+  font-family: "Segoe UI", system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
+}
+
+.boot-screen {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ---------- Layout ---------- */
+.navbar-brand-mark {
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
+  background: var(--brand);
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  margin-right: 0.55rem;
+}
+
+.page {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 1.75rem 1rem 4rem;
+}
+
+.page-narrow {
+  max-width: 720px;
+}
+
+/* ---------- Cards ---------- */
+.card {
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  box-shadow: 0 1px 2px rgba(31, 45, 61, 0.04);
+}
+
+.card-header {
+  background: #fff;
+  border-bottom: 1px solid var(--line);
+  font-weight: 600;
+  padding: 0.85rem 1.15rem;
+}
+
+.stat-card .stat-value {
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 1.1;
+  color: var(--brand);
+}
+
+.stat-card .stat-label {
+  font-size: 0.78rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+/* ---------- Tables ---------- */
+.table {
+  margin-bottom: 0;
+  font-size: 0.925rem;
+}
+
+.table > thead th {
+  background: #f0f4fa;
+  color: var(--muted);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+  border-bottom: 1px solid var(--line);
+  white-space: nowrap;
+}
+
+.table > tbody td {
+  vertical-align: middle;
+}
+
+/* ---------- Auth ---------- */
+.auth-wrap {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+  background: linear-gradient(160deg, #eef3fc 0%, #f7f9fd 55%, #eaf0fa 100%);
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 440px;
+}
+
+/* ---------- Misc ---------- */
+.company-logo {
+  width: 54px;
+  height: 54px;
+  border-radius: 10px;
+  background: #eef4ff;
+  color: var(--brand);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.15rem;
+  flex: 0 0 auto;
+}
+
+.empty-state {
+  padding: 2.25rem 1rem;
+  text-align: center;
+  color: var(--muted);
+}
+
+.empty-state i {
+  font-size: 1.9rem;
+  display: block;
+  margin-bottom: 0.5rem;
+  opacity: 0.55;
+}
+
+.badge-soft {
+  font-weight: 600;
+  padding: 0.35em 0.7em;
+  border-radius: 6px;
+}
+
+.toast-stack {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 1080;
+  width: min(360px, calc(100vw - 2rem));
+}
+
+.nav-pills .nav-link {
+  color: var(--muted);
+  font-weight: 500;
+}
+
+.nav-pills .nav-link.active {
+  background: var(--brand);
+}
+
+.text-muted-sm {
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+a.plain {
+  text-decoration: none;
+}
